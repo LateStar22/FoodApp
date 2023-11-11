@@ -1,0 +1,35 @@
+{
+  "name": "reactcourse",
+  "version": "1.0.0",
+  "description": "Namaste React",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LateStar22/ReactCourse.git"
+  },
+  "keywords": [
+    "Namaste",
+    "React"
+  ],
+  "author": "Aniket Shukla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LateStar22/ReactCourse/issues"
+  },
+  "homepage": "https://github.com/LateStar22/ReactCourse#readme",
+  "devDependencies": {
+    "parcel": "^2.10.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

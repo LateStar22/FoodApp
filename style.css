@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+
+html{
+    background-image: url('./bodybackground.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.app{
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    background-image: linear-gradient(to right,rgb(244, 137, 48),rgb(239, 65, 96));
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header > .logo-container > img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+
+.nav-items{
+    /* position: absolute; */
+    height: 100%;
+    /* padding: 48px 0px; */
+    /* float: right; */
+    font-size: 20px;
+    /* clear: left; */
+}
+
+.nav-items > ul > li{
+    display: inline;
+    margin: 9px;
+    cursor: pointer;
+}
+
+.body{
+    display: flex;
+    padding: 10px;
+    /* border: 2px solid black; */
+    flex-direction: column;
+}
+
+
+.search-box > input {
+    border: 2px solid black;
+    outline: 0px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: cursive;
+    /* max-width: 700px; */
+    width: 100%;
+}
+
+.body > .res-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.body > .res-container > .res-card{
+    min-width: 200px;
+    width: 200px;  
+    min-height: 200px;
+    text-align: center;
+    margin: 5px;
+    background-image: linear-gradient(to right,rgb(244, 137, 48),rgb(239, 65, 96));
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+}
+
+.body > .res-container > .res-card:hover{
+    transform: scale(1.1);
+}
+
+.body > .res-container > .res-card > h3 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.res-card > .res-logo {
+    height: 150px;
+    width: 200px;
+}
+
+.res-card > .res-logo > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* media queries */
+/* Designing header */
+@media screen and (max-width: 430px) {
+    .header {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .nav-items > ul{
+        text-align: center;
+    }
+
+
+    .nav-items > ul > li{
+        display: block;
+    }
+  }
