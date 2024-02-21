@@ -33,7 +33,7 @@ const Body = () => {
 
     // Swiggy API is being hit. This is Side Effect which is triggered by useEffect.
     async function fetchData() {
-        let data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.7083792&lng=76.7718838&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        let data = await fetch("https://cors-anywhere.herokuapp.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.7083792&lng=76.7718838&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         setRestaurantsList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setfilteredListofRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
